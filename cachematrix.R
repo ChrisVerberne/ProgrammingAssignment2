@@ -1,4 +1,4 @@
-## makeCacheMatrix creates a list of functions for 
+## makeCacheMatrix implements a list of functions for 
 ## associating a matrix (set/get) and for storing or retrieving
 ## (setsolve/getsolve) a cached version of the inverse of 
 ## the associated matrix (x).
