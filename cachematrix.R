@@ -1,6 +1,7 @@
-## makeCacheMatrix creates a list of functions that 
-## for setting/retrieving a cached version of the inverse of 
-## the argument matrix (x).
+## makeCacheMatrix creates a list of functions for 
+## associating a matrix (set/get) and for storing or retrieving
+## (setsolve/getsolve) a cached version of the inverse of 
+## the associated matrix (x).
 
 makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
@@ -18,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## cachesolve returns the inverse of the matrix that has
-## earlier been associated with makeCacheMatrix.
+## earlier is assiociated to the list of functions of makeCacheMatrix.
 ## It is either computed or delivered from cache (if available).
 
 cacheSolve <- function(x, ...) {
