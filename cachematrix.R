@@ -1,6 +1,6 @@
-## makeCacheMatrix implements population of the matrix
-## and computation of the inverted matrix 
-## as well as the retrieval of it from its cache
+## makeCacheMatrix creates a list of functions that 
+## for setting/retrieving a cached version of the inverse of 
+## the argument matrix (x).
 
 makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
@@ -17,10 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
-## cachesolve returns the inverted matrix that has
-## earlier been created with makeCacheMatrix.
-## It is either computed or delivered from cache,
-## this is not notable for the end-user.
+## cachesolve returns the inverse of the matrix that has
+## earlier been associated with makeCacheMatrix.
+## It is either computed or delivered from cache (if available).
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
